@@ -39,17 +39,6 @@ pipeline:
                       python -m pip install --upgrade pip
                       pip install  pytest
                       if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
-              - step:
-                  identifier: dockerbuild
-                  name: docker_build
-                  spec:
-                    caching: true
-                    connectorRef: <+input>
-                    repo: hello/world
-                    tags:
-                      - latest
-                  timeout: ""
-                  type: BuildAndPushDockerRegistry
           platform:
             os: Linux
             arch: Amd64
