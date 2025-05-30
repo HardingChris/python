@@ -1,0 +1,14 @@
+inputSet:
+  name: Build_HardingChris_python_1748618096894-pr-trigger-input-set
+  identifier: Build_HardingChris_python_1748618096894prtriggerinputset
+  orgIdentifier: default
+  projectIdentifier: default_project
+  pipeline:
+    identifier: Build_HardingChris_python_1748618096894
+    properties:
+      ci:
+        codebase:
+          build:
+            type: PR
+            spec:
+              number: <+trigger.prNumber>
