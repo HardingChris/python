@@ -1,0 +1,14 @@
+inputSet:
+  name: Build_HardingChris_python_1748618096894-push-trigger-input-set
+  identifier: Build_HardingChris_python_1748618096894pushtriggerinputset
+  orgIdentifier: default
+  projectIdentifier: default_project
+  pipeline:
+    identifier: Build_HardingChris_python_1748618096894
+    properties:
+      ci:
+        codebase:
+          build:
+            type: branch
+            spec:
+              branch: <+trigger.branch>
